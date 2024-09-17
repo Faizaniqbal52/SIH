@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Alumni Platform</h1>
+        <nav>
+            <ul>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#signup">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="login">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="email" id="loginEmail" placeholder="Gmail" required><br>
+            <input type="password" id="loginPassword" placeholder="Password" required><br>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <section id="signup">
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+            <input type="text" id="username" placeholder="Username" required><br>
+            <input type="email" id="signupEmail" placeholder="Gmail" required><br>
+            <input type="text" id="contactNo" placeholder="Contact No" required><br>
+            <input type="text" id="otp" placeholder="OTP" required><br>
+            <button type="button" id="requestOtp">Request OTP</button><br>
+            <input type="text" id="university" placeholder="University" required><br>
+
+            <label for="role">Role</label>
+            <select id="role" required>
+                <option value="alumni">Alumni</option>
+                <option value="student">Student</option>
+            </select><br>
+
+            <input type="password" id="signupPassword" placeholder="Password" required><br>
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
